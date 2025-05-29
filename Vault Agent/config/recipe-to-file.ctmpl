@@ -1,0 +1,9 @@
+{{ with secret "secret/tacos" }}
+{
+    "recipe": {
+        "filling": "{{ .Data.data.filling }}",
+        "salsa": "{{ .Data.data.salsa }}",
+        "tortilla": "{{ .Data.data.tortilla }}"
+    }
+}
+{{ end }}
